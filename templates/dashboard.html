@@ -385,6 +385,19 @@
             margin-bottom: 2rem;
         }
 
+        /* Chart Containers */
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        .chart-container-small {
+            position: relative;
+            height: 250px;
+            width: 100%;
+        }
+
         /* SVG Icons */
         svg {
             width: 100%;
@@ -492,7 +505,9 @@
                             <option value="90">Last 90 days</option>
                         </select>
                     </div>
-                    <canvas id="visibilityChart" height="100"></canvas>
+                    <div class="chart-container-small">
+                        <canvas id="visibilityChart"></canvas>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -592,7 +607,9 @@
                 <div class="card-header">
                     <h2 class="card-title">Historical Score Trends</h2>
                 </div>
-                <canvas id="historicalChart" height="80"></canvas>
+                <div class="chart-container">
+                    <canvas id="historicalChart"></canvas>
+                </div>
             </div>
         </div>
     </main>
